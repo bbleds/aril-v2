@@ -1,0 +1,20 @@
+{
+  "name": "aril-v2",
+  "description": "Locates Farmer's Markets by zip code",
+  "main": "index.js",
+  "authors": [
+    "Ben Bledsoe"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/bbleds/aril-v2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
