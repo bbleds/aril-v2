@@ -1,7 +1,5 @@
 "use strict";
 
-// main functions
-
 /**
  * Get the lat and lng coordinates Nashville, TN, USA coordinates
  *
