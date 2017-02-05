@@ -2,9 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>Farmer's Market Locater</title>
+    <!-- css dependencies -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- generated & minified project css -->
+    <link rel="stylesheet" href="build/css/styles.min.css">
   </head>
   <body>
+    <div id="main-container">
+      <div class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Aril - Farmer's Markets</a>
+            </div>
+          </div>
+      </div>
 
+      <!-- main map container -->
+      <div id="map-container">
+        <div id="map"></div>
+      </div>
+
+      <!-- search-bar footer -->
+      <div id="footer">
+        <input class="form-control" type="number" id="zip-search" min='0' placeholder="Search by zip code">
+      </div>
+    </div>
+
+    <!-- Js dependencies -->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!-- generated & minified project js -->
+    <script type="text/javascript" src='build/js/scripts.min.js'></script>
   </body>
 </html>

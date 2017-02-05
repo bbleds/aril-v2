@@ -1,8 +1,37 @@
+// Set up variables and mixin
+$main-color: tomato;
+
 body {
-  h1 {
-    color : red;
-    span {
-      color: blue;
-    }
+  background-color: whitesmoke;
+}
+
+// nav
+.navbar {
+  background-color: $main-color;
+  color: white;
+
+  a{
+    color: white;
   }
+}
+
+#map-container{
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100vh;
+  padding: 50px 0px 100px;
+}
+
+#footer{
+  width: 100%;
+  background-color: $main-color;
+  height: 100px;
+  position: fixed;
+  bottom: 0px;
+
+    #zip-search {
+      width: 90%;
+      margin: 30px 5% 0px;
+      height: 40px;
+    }
 }
