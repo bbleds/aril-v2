@@ -3,7 +3,7 @@
 // main functions
 
 /**
- * Get the lat and lng coordinates for a user's device or default to Nashville, TN, USA coordinates
+ * Get the lat and lng coordinates Nashville, TN, USA coordinates
  *
  * @returns {object} Coords - set of latitude and longitude coordinates
  */
@@ -15,12 +15,5 @@ let getDefaultCoords = () => {
     lng : -86.7816
   }
 
-  // check geolocation availability
-  if(!navigator.geolocation){
-    // short circuit if not available
-    return coords;
-  }
-
   return coords;
-
 }
