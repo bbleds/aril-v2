@@ -7,10 +7,16 @@ const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
 const cleanCss = require('gulp-clean-css');
+const order = require('gulp-order');
 
 // concat, babelify, and minify js
 gulp.task("babel", () => {
   return gulp.src("src/js/*.js")
+    .pipe(order([
+      "gmap.js",
+      "index.js",
+      "eventlisteners.js"
+    ]))
     .pipe(concat('scripts.min.js'))
     .pipe(babel())
     .pipe(uglify())

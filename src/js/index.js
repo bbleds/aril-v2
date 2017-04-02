@@ -1,5 +1,7 @@
 "use strict";
 
+// general utility methods to use in other scripts
+
 /**
  * Get the lat and lng coordinates Nashville, TN, USA coordinates
  *
